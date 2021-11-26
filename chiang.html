@@ -11,16 +11,15 @@
 			margin: 0px;
 			font-size: 16px;
 			font-family: "微軟正黑體";
-			background-color: #eeeeee;
+			background-color:lightgray;
 		}
 
 		.head-txt {
 			font-size: 30px;
-			background-color:#000000;
+			background-color: #000000;
 			color: white;
 			text-align: center;
 		}
-
 
 		.title {
 			border: 1px solid black;
@@ -28,7 +27,9 @@
 			width: 600px;
 			font-size: 18px;
 			font-weight: bold;
-			margin-left: auto;margin-right: auto;
+			margin-left: auto;
+			margin-right: auto;
+			background-color:lightgoldenrodyellow;
 		}
 
 		.content {
@@ -36,20 +37,31 @@
 			padding: 5px;
 			width: 600px;
 			font-size: 16px;
-			margin-left: auto;margin-right: auto;
+			line-height: 25px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color:lightgoldenrodyellow;
 		}
 
 		@media (max-width: 500px) {
-			.head-txt{font-size: 24px;}
-			.title{font-size: 16px; width: 90%;}
-			.content{font-size: 14px;width: 90%;}
-					}
+			.head-txt {
+				font-size: 24px;
+			}
+
+			.title {
+				font-size: 16px;
+			}
+
+			.content {
+				font-size: 14px;
+			}
+		}
 	</style>
 </head>
 
 <body>
-		<div class="head-txt">個人簡介</div>
-	
+	<div class="head-txt">個人簡介</div>
+
 	
 		<div class="title">兩百字內的個人簡介</div>
 		<div class="content">你好，我是阿江（江天生）之前的工作經驗主要從事軟體(firmware)測試與系統整合測試(SIT)相關工作，
@@ -57,7 +69,7 @@
 		<div class="title">為什麼想成為前端、後端、或全端工程師？</div>
 		<div class="content">轉換工作，能自已做開發，解鎖軟體工程師。</div>
 		<div class="title">為了成為軟體工程師，曾經做過什麼努力？</div>
-		<div class="content">自學W3Cschool與看線上教學</div>
+		<div class="content" `>自學W3Cschool與看線上教學</div>
 		<div class="title">如果參與這個計畫，會怎麼安排學習時間？</div>
 		<div class="content">目前待業中</div>
 		<div class="title">如果參與這個計畫，預期會碰到什麼困難？你打算怎麼解決它？</div>
@@ -67,6 +79,7 @@
 		<div class="title">想要對我們說的事情？</div>
 		<div class="content">期待彭彭老師有更多的線上課程</div>
 	
+
 </body>
 
 </html>
