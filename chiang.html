@@ -11,7 +11,7 @@
 			margin: 0px;
 			font-size: 16px;
 			font-family: "微軟正黑體";
-			background-color:lightgray;
+			background-color: lightgray;
 		}
 
 		.head-txt {
@@ -21,42 +21,35 @@
 			text-align: center;
 		}
 
-		.title {
-			border: 1px solid black;
-			padding: 5px;
+		table {
 			width: 600px;
-			font-size: 18px;
-			font-weight: bold;
+			border: 1px solid #000000;
+			border-collapse: collapse;
 			margin-left: auto;
 			margin-right: auto;
-			background-color:lightgoldenrodyellow;
+			background-color: bisque;
+		}
+
+		td {
+			border-bottom: 1px solid #000000;
+		}
+
+		.title {
+			font-weight: bold;
+			font-size: 18px;
+			padding: 10px;
 		}
 
 		.content {
-			border: 1px solid black;
-			padding: 5px;
-			width: 600px;
-			font-size: 16px;
 			line-height: 25px;
-			margin-left: auto;
-			margin-right: auto;
-			background-color:lightgoldenrodyellow;
+			padding: 10px;
 		}
 
-		@media (max-width: 500px) {
-			.head-txt {
-				font-size: 24px;
-			}
-
-			.title {
-				font-size: 16px;
-				width: 90%;
-			}
-
-			.content {
-				font-size: 14px;
-				width: 90%;
-			}
+		@media (max-width:500px){
+			table { width:90%; }
+			.head-txt {font-size: 24px;}
+			.title {font-size: 16px;}
+			.content {font-size: 14px;}
 		}
 	</style>
 </head>
@@ -64,24 +57,56 @@
 <body>
 	<div class="head-txt">個人簡介</div>
 
-	
-		<div class="title">兩百字內的個人簡介</div>
-		<div class="content">你好，我是阿江（江天生）之前的工作經驗主要從事軟體(firmware)測試與系統整合測試(SIT)相關工作，
-			本身非本科(資訊)系，會投入資訊業，一開始是自已報名職訓局 網路工程師訓練班，結訓之後找到資訊的相關工作，從工作當中做中學 學中做。</div>
-		<div class="title">為什麼想成為前端、後端、或全端工程師？</div>
-		<div class="content">轉換工作，能自已做開發，解鎖軟體工程師。</div>
-		<div class="title">為了成為軟體工程師，曾經做過什麼努力？</div>
-		<div class="content" `>自學W3Cschool與看線上教學</div>
-		<div class="title">如果參與這個計畫，會怎麼安排學習時間？</div>
-		<div class="content">每天看1-2部教學影片,弄懂觀念+實作</div>
-		<div class="title">如果參與這個計畫，預期會碰到什麼困難？你打算怎麼解決它？</div>
-		<div class="content">程式寫不出來。先問Google大神，如無法解決再問人，主要要了解問題的原因，解決問題 找出答案</div>
-		<div class="title">是否有想要加入的軟體公司？為什麼想加入該公司？</div>
-		<div class="content">暫無</div>
-		<div class="title">想要對我們說的事情？</div>
-		<div class="content">期待彭彭老師有更多的線上課程</div>
-	
 
+	<div class="box">
+		<table>
+			<tr>
+				<td class="title">兩百字內的個人簡介</td>
+			</tr>
+			<tr>
+				<td class="content">你好，我是阿江（江天生）之前的工作經驗主要從事軟體(firmware)測試與系統整合測試(SIT)相關工作，
+					本身非本科(資訊)系，會投入資訊業，一開始是自已報名職訓局 網路工程師訓練班，結訓之後找到資訊的相關工作，從工作當中做中學 學中做。
+					為什麼想成為前端、後端、或全端工程師？</td>
+			</tr>
+			<tr>
+				<td class="title">為什麼想成為前端、後端、或全端工程師？</td>
+			</tr>
+			<tr>
+				<td class="content">轉換工作，能自已做開發，解鎖軟體工程師。</td>
+			</tr>
+			<tr>
+				<td class="title">為了成為軟體工程師，曾經做過什麼努力？</td>
+			</tr>
+			<tr>
+				<td class="content">自學W3Cschool與看線上教學</td>
+			</tr>
+			<tr>
+				<td class="title">如果參與這個計畫，會怎麼安排學習時間？</td>
+			</tr>
+			<tr>
+				<td class="content">每天看1-2部教學影片,弄懂觀念+實作</td>
+			</tr>
+			<tr>
+				<td class="title">如果參與這個計畫，預期會碰到什麼困難？你打算怎麼解決它？</td>
+			</tr>
+			<tr>
+				<td class="content">程式寫不出來。先問Google大神，如無法解決再問人，主要要了解問題的原因，解決問題 找出答案</td>
+			</tr>
+			<tr>
+				<td class="title">是否有想要加入的軟體公司？為什麼想加入該公司？</td>
+			</tr>
+			<tr>
+				<td class="content">暫無</td>
+			</tr>
+			<tr>
+				<td class="title">想要對我們說的事情？</td>
+			</tr>
+			<tr>
+				<td class="content">期待彭彭老師有更多的線上課程</td>
+			</tr>
+		</table>
+
+	</div>
 </body>
 
 </html>
